@@ -1,6 +1,5 @@
 # Key Notes
 # 1 -> Array in python does not Need to be homogenous in nature.
-# 2 ->
 
 # Array declaration / Initialization
 """
