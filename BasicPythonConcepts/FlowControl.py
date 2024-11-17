@@ -42,6 +42,19 @@ while counter <= 100:
     counter += 1
 print(my_list)
 
+# Printing the sum of n elements using while loop
+array_len = int(input("Enter the len of an array"))
+sum = 0 
+i = 1
+
+while i <= array_len:
+    number = int(input(f"Input the {i} number"))
+    sum += number
+    i += 1
+
+print(sum)
+
+
 # For Loop 
 
 print("For Loop")   
@@ -56,6 +69,20 @@ for x in practice_list:
                 solution_list.append(y)
 
 print(solution_list)
+
+# Factorial using for loop
+fact_num = int(input("Enter the number you want to find factorial for:"))
+factorial : int = 1
+for i in range(0,fact_num):
+    print("Iterator",i)
+    factorial = factorial * (i + 1)
+    print(factorial)
+    
+# Print square table of a number uptil the speecified number    
+number_1 = int(input("Enter the number you want to print the number of square table"))
+for i in range(0, number_1):
+    i += 1
+    print(i * i)
 
 # Ternary If Example 
 color = ""

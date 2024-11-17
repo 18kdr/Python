@@ -67,6 +67,54 @@ def multiply_calculator(number):
 print(multiply_calculator(6))
 print(has_calculated)
 
+# Factorial using functions
+def len_func(my_number):
+    factorial = 1
+    for i in range(0,my_number):
+        factorial =  factorial * (i + 1)
+        print(factorial)
+
+    
+my_number = int(input("Enter the number you want to find factorial of :"))
+len_func(my_number)
+
+# Method 2 to write the factorial function with checks
+def factorial(num):
+    if type(num) != int:
+        return None
+    if num < 0:
+        return None
+    i = int(num)    
+    while i > 1:
+        i -= 1 
+        num *= i
+    return num
+
+number = 5
+print(factorial(number))
+
+
+# Recursive Functions 
+
+# Print the sum of all elements till the specified number 
+
+def sum_func(my_num):
+    if my_num == 1:
+        return my_num 
+    return my_num + sum_func(my_num - 1)
+    
+print(sum_func(7))
+
+# Print the list at new line using recursion
+def print_list(my_list = [], idx = 1):
+    if idx == len(my_list):
+        return 
+    print(my_list[idx])
+    print_list(my_list, idx + 1)
+    
+my_list = [1,2,3,4,4,55,56,7,8]
+print_list(my_list,idx = 0)
+
 
 #Lambda functions
 
